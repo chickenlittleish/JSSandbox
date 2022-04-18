@@ -82,5 +82,91 @@ for (var i = 0; i<Array.length; i++)
 }
 </script>
 
+<h2>Objects:</h2>
+<script type="text/javascript">
+var Log = {
+    FirstName : "Saif",
+    LastName : "Nimer",
+    Age : "######9",
+    Day : "41822",
+}
+
+for (var member in Log)
+{
+	if (Log.hasOwnProperty(member))
+	{
+		console.log("The"+member+"is"+Log[member])
+	}
+}
+console.log(Log.FirstName);
+console.log(Log.LastName);
+console.log(Log.Age);
+console.log(Log.Day);
+</script>
+
+<h2>Functions:</h2>
+<script type="text/javascript">
+var Prophecies = function(name) 
+{
+    return name + " is a factor of the hands of the void, termination is necessary";
+}
+console.log(Prophecies("John"));
+console.log(Prophecies("Samantha"));
+console.log(Prophecies("Roger"));
+console.log(Prophecies("Fredrick"));
+
+function terminate(factors)
+{
+    return factors + " has been terminated"
+}
+console.log(terminate("John"));
+console.log(terminate("Samantha"));
+console.log(terminate("Roger"));
+console.log(terminate("Fredrick"));
+
+function Collect(items)
+{
+    return items * 3 + " crystal type in inventory"
+}
+console.log(Collect("15"));
+console.log(Collect("18"));
+console.log(Collect("20"));
+console.log(Collect("35064"));
+</script>
+
+<h2>Pop-up Boxes:</h2>
+<script type="text/javascript">
+var End = prompt("When Will My Suffering End?");
+console.log(End);
+</script>
+
+<h2>Callbacks:</h2>
+<script type="text/javascript">
+function Broadcast(Time)
+{
+    Time(547);
+    Time(1650);
+    Time(2321);
+}
+
+function Time(World) {
+    console.log(World);
+}
+
+Broadcast(Time);
+</script>
+
+<h2>Arrow Function:</h2>
+<script type="text/javascript">
+const Work = variable => variable / 2 *4 +5 -20 /500;
+console.log(Work(100));
+console.log(Work(200));
+console.log(Work(300));
+console.log(Work(400));
+</script>
+
+
+
+
 </body>
 </html>
